@@ -1,0 +1,715 @@
+
+<!-- PERIODIC HTML -->
+
+<html style="margin: 0; padding: 0; border: 0;">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/periodic.css">
+<script src="js/periodic.js"></script>
+   </head>
+   <body style="margin: 0; padding: 0; border: 0;">
+   <div id="myModal" class="modal">
+     <!-- Modal content -->
+     <div class="modal-content">
+       <div class="modal-header">
+         <span class="close1">&times;</span>
+       </div>
+       <div class="modal-body">
+         <p id="p1"></p>
+       </div>
+       <div class="modal-footer"></div>
+     </div>
+</div>
+
+<script src="js/modal.js"></script>
+
+
+
+
+      <a href="#" style="color:black" onClick='displayModal("<b>Hydrogen</b><br>"+"Protons:1<br>"+"Electrons:1<br>"+"Neutrons:0<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:1s1");'>
+      <center
+      style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:1%4vw;border:2px solid;background:hsla(315,100%,685%, 0.70)">
+
+         1
+         <h2>H</h2>
+         1.008
+      </center></a>
+
+      <center style="font:1vw/5% arial;width:18.5%; height:21%; padding:.8%.9%; position:absolute; margin:1%30vw; border:2px solid; background:hsl(60,50%,65%">
+	  		<p><font size="+1">Molar Mass Calculator</font></p>
+	  		<form action="javascript:" onsubmit="calculate(document.forms[0].elements[0].value)">
+	  		<input type="text">
+	  		<input value="Calculate" onclick="getMolarMass(document.forms[0].elements[0].value)" type="button">
+	  		<div id="displaydiv"></div>
+	  		</form>
+	</center>
+      <a href="#" style="color:black"onClick='displayModal("<b>Helium</b><br>"+"Protons:2<br>"+"Electrons:2<br>"+"Neutrons:2<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:1s2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:1%89vw;border:2px
+         solid;background:hsla(247, 100%, 68%, 0.70)" >
+         2
+         <h2>He</h2>
+         4.003
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Lithium</b><br>"+"Protons:3<br>"+"Electrons:3<br>"+"Neutrons:4<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[He]2s1");'><center style="font:1vw/5%arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         3
+         <h2>Li</h2>
+         6.941
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Beryllium</b><br>"+"Protons:4<br>"+"Electrons:4<br>"+"Neutrons:5<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[He]2s2");'>
+      	<center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%9vw;border:2px solid;background:hsla(26, 100%, 50%, 0.7)">
+         4
+         <h2>Be</h2>
+         9.012
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Boron</b><br>"+"Protons:5<br>"+"Electrons:5<br>"+"Neutrons:6<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[He]2s2 2p1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%64vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         5
+         <h2>B</h2>
+         10.811
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Carbon</b><br>"+"Protons:6<br>"+"Electrons:6<br>"+"Neutrons:6<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[He]2s2 2p2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%69vw;border:2px solid;background:hsla(178, 100%, 68%, 0.70)">
+         6
+         <h2>C</h2>
+         12.01
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Nitrogen</b><br>"+"Protons:7<br>"+"Electrons:7<br>"+"Neutrons7:<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[He]2s2 2p3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%74vw;border:2px
+         solid;background:hsla(178, 100%, 68%, 0.70)">
+         7
+         <h2>N</h2>
+         14.01
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Oxygen</b><br>"+"Protons:8<br>"+"Electrons:8<br>"+"Neutrons:8<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[He]2s2 2p4");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%79vw;border:2px solid;background:hsla(178, 100%, 68%, 0.70)">
+         8
+         <h2>O</h2>
+         16.00
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Fluorine</b><br>"+"Protons:9<br>"+"Electrons:9<br>"+"Neutrons:10<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[He]2s2 2p5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%84vw;border:2px solid;background:hsla(59, 100%, 68%, 0.70)">
+         9
+         <h2>F</h2>
+         19.00
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Neon</b><br>"+"Protons:10<br>"+"Electrons:10<br>"+"Neutrons:10<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[He]2s2 2p6");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:5.4%89vw;border:2px solid;background:hsla(247, 100%, 68%, 0.70)">
+         10
+         <h2>Ne</h2>
+         20.18
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Sodium</b><br>"+"Protons:11<br>"+"Electrons:11<br>"+"Neutrons:12<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ne]3s1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         11
+         <h2>Na</h2>
+         22.99
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Magnesium</b><br>"+"Protons:12<br>"+"Electrons:12<br>"+"Neutrons:12<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ne]3s2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%9vw;border:2px
+         solid;background:hsla(26, 100%, 50%, 0.7)">
+         12
+         <h2>Mg</h2>
+         24.31
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Aluminum</b><br>"+"Protons:13<br>"+"Electrons:13<br>"+"Neutrons:14<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ne]3s2 3p1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%64vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         13
+         <h2>Al</h2>
+         26.98
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Silicon</b><br>"+"Protons:14<br>"+"Electrons:14<br>"+"Neutrons:14<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ne]3s2 3p2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%69vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         14
+         <h2>Si</h2>
+         28.09
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Phosphorus</b><br>"+"Protons:15<br>"+"Electrons:15<br>"+"Neutrons:16<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ne]3s2 3p3");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%74vw;border:2px solid;background:hsla(178, 100%, 68%, 0.70)">
+         15
+         <h2>P</h2>
+         30.97
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Sulfur</b><br>"+"Protons:16<br>"+"Electrons:16<br>"+"Neutrons:16<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ne]3s2 3p4");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%79vw;border:2px
+         solid;background:hsla(178, 100%, 68%, 0.70)">
+         16
+         <h2>S</h2>
+         32.06
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Chlorine</b><br>"+"Protons:17<br>"+"Electrons:17<br>"+"Neutrons:18<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ne]3s2 3p5");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%84vw;border:2px solid;background:hsla(59, 100%, 68%, 0.70)">
+         17
+         <h2>Cl</h2>
+         35.45
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Argon</b><br>"+"Protons:18<br>"+"Electrons:18<br>"+"Neutrons:22<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ne]3s2 3p6");'><center style =
+         "font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:9.8%89vw;border:2px solid;background:hsla(247, 100%, 68%, 0.70)">
+         18
+         <h2>Ar</h2>
+         39.95
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Potassium</b><br>"+"Protons:19<br>"+"Electrons:19<br>"+"Neutrons:20<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s1");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         19
+         <h2>K</h2>
+         39.10
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Calcium</b><br>"+"Protons:20<br>"+"Electrons:20<br>"+"Neutrons:20<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%9vw;border:2px
+         solid;background:hsla(26, 100%, 50%, 0.7)">
+         20
+         <h2>Ca</h2>
+         40.08
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Scandium</b><br>"+"Protons:21<br>"+"Electrons:21<br>"+"Neutrons:24<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d1");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%14vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         21
+         <h2>Sc</h2>
+         44.96
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Titanium</b><br>"+"Protons:22<br>"+"Electrons:22<br>"+"Neutrons:26<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d2");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%19vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         22
+         <h2>Ti</h2>
+         47.87
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Vanadium</b><br>"+"Protons:23<br>"+"Electrons:23<br>"+"Neutrons:28<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d3");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%24vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         23
+         <h2>V</h2>
+         50.94
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Chromium</b><br>"+"Protons:24<br>"+"Electrons:24<br>"+"Neutrons:28<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s1 3d5");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%29vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         24
+         <h2>Cr</h2>
+         52.00
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Manganese</b><br>"+"Protons:25<br>"+"Electrons:25<br>"+"Neutrons:30<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d5");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%34vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         25
+         <h2>Mn</h2>
+         54.94
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Iron</b><br>"+"Protons:26<br>"+"Electrons:26<br>"+"Neutrons:30<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d6");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%39vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         26
+         <h2>Fe</h2>
+         55.85
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Cobalt</b><br>"+"Protons:27<br>"+"Electrons:27<br>"+"Neutrons:32<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d7");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%44vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         27
+         <h2>Co</h2>
+         58.93
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Nickel</b><br>"+"Protons:28<br>"+"Electrons:28<br>"+"Neutrons:31<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d8");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%49vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         28
+         <h2>Ni</h2>
+         58.69
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Copper</b><br>"+"Protons:29<br>"+"Electrons:29<br>"+"Neutrons:35<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s1 3d10");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%54vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         29
+         <h2>Cu</h2>
+         63.55
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Zinc</b><br>"+"Protons:30<br>"+"Electrons:30<br>"+"Neutrons:35<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d10");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%59vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         30
+         <h2>Zn</h2>
+         65.38
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Gallium</b><br>"+"Protons:31<br>"+"Electrons:31<br>"+"Neutrons:39<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d10 4p1");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%64vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         31
+         <h2>Ga</h2>
+         69.72
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Germanium</b><br>"+"Protons:32<br>"+"Electrons:32<br>"+"Neutrons:41<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d10 4p2");'><center style ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%69vw;border:2px
+         solid;background:hsla(88, 100%, 50%, 0.7)">
+         32
+         <h2>Ge</h2>
+         72.63
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Arsenic</b><br>"+"Protons:33<br>"+"Electrons:33<br>"+"Neutrons:42<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Ar]4s2 3d10 4p3");'><center style ="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%74vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         33
+         <h2>As</h2>
+         74.92
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Selenium</b><br>"+"Protons:34<br>"+"Electrons:34<br>"+"Neutrons:45<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ar]4s2 3d10 4p4");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%79vw;border:2px
+         solid;background:hsla(178, 100%, 68%, 0.70)">
+         34
+         <h2>Se</h2>
+         78.97
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Bromine</b><br>"+"Protons:35<br>"+"Electrons:35<br>"+"Neutrons:45<br>"+"Natural State of Matter:Liquid<br>"+"Electron Configuration:[Ar]4s2 3d10 4p5");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%84vw;border:2px solid;background:hsla(360, 100%, 100%, 0.7)">
+         35
+         <h2>Br</h2>
+         79.90
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Krypton</b><br>"+"Protons:36<br>"+"Electrons:36<br>"+"Neutrons:48<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Ar]4s2 3d10 4p6");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:14.20%89vw;border:2px
+         solid;background:hsla(247, 100%, 68%, 0.70)">
+         36
+         <h2>Kr</h2>
+         83.80
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Rubidium</b><br>"+"Protons:37<br>"+"Electrons:37<br>"+"Neutrons:48<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         37
+         <h2>Rb</h2>
+         85.47
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Strontium</b><br>"+"Protons:38<br>"+"Electrons:38<br>"+"Neutrons:50<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2");'><center style=
+         "font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%9vw;border:2px solid;background:hsla(26, 100%, 50%, 0.7)">
+         38
+         <h2>Sr</h2>
+         87.62
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Yttrium</b><br>"+"Protons:39<br>"+"Electrons:39<br>"+"Neutrons:50<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%14vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         39
+         <h2>Y</h2>
+         88.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Zirconium</b><br>"+"Protons:40<br>"+"Electrons:40<br>"+"Neutrons:51<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%19vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         40
+         <h2>Zr</h2>
+         91.22
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Niobium</b><br>"+"Protons:41<br>"+"Electrons:41<br>"+"Neutrons:52<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1 4d4");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%24vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         41
+         <h2>Nb</h2>
+         92.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Molybdenum</b><br>"+"Protons:42<br>"+"Electrons:42<br>"+"Neutrons:54<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1 4d5");'><center style="font:1vw/5%arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%29vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         42
+         <h2>Mo</h2>
+         95.95
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Technetium</b><br>"+"Protons:43<br>"+"Electrons:43<br>"+"Neutrons:55<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%34vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         43
+         <h2>Tc</h2>
+         97.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Ruthenium</b><br>"+"Protons:44<br>"+"Electrons:44<br>"+"Neutrons:57<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1 4d7");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%39vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         44
+         <h2>Ru</h2>
+         101.07
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Rhodium</b><br>"+"Protons:45<br>"+"Electrons:45<br>"+"Neutrons:58<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1 4d8");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%44vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         45
+         <h2>Rh</h2>
+         102.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Palladium</b><br>"+"Protons:46<br>"+"Electrons:46<br>"+"Neutrons:60<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]4d10");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%49vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         46
+         <h2>Pd</h2>
+         106.42
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Silver</b><br>"+"Protons:47<br>"+"Electrons:47<br>"+"Neutrons:61<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s1 4d10");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%54vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         47
+         <h2>Ag</h2>
+         107.87
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Cadmium</b><br>"+"Protons:48<br>"+"Electrons:48<br>"+"Neutrons:64<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d10");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%59vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         48
+         <h2>Cd</h2>
+         112.41
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Indium</b><br>"+"Protons:49<br>"+"Electrons:49<br>"+"Neutrons:66<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d10 5p1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%64vw;border:2px
+         solid;background:hsla(88, 100%, 50%, 0.7)">
+         49
+         <h2>In</h2>
+         114.82
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Tin</b><br>"+"Protons:50<br>"+"Electrons:50<br>"+"Neutrons:69<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d10 5p2");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%69vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         50
+         <h2>Sn</h2>
+         118.71
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Antimony</b><br>"+"Protons:51<br>"+"Electrons:51<br>"+"Neutrons:71<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d10 5p3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%74vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         51
+         <h2>Sb</h2>
+         121.76
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Tellurium</b><br>"+"Protons:52<br>"+"Electrons:52<br>"+"Neutrons:76<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Kr]5s2 4d10 5p4");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%79vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         52
+         <h2>Te</h2>
+         127.60
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Iodine</b><br>"+"Protons:53<br>"+"Electrons:53<br>"+"Neutrons:74<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Kr]5s2 4d10 5p5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%84vw;border:2px
+         solid;background:hsla(59, 100%, 68%, 0.70)">
+         53
+         <h2>I</h2>
+         126.90
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Xenon</b><br>"+"Protons:54<br>"+"Electrons:54<br>"+"Neutrons:77<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Kr]5s2 4d10 5p6");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:18.6%89vw;border:2px solid;background:hsla(247, 100%, 68%, 0.70)">
+         54
+         <h2>Xe</h2>
+         131.29
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal"<b>Cesium</b><br>"+"Protons:55<br>"+"Electrons:55<br>"+"Neutrons:78<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         55
+         <h2>Cs</h2>
+         132.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Barium</b><br>"+"Protons:56<br>"+"Electrons:56<br>"+"Neutrons:81<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%9vw;border:2px solid;background:hsla(26, 100%, 50%, 0.7)">
+         56
+         <h2>Ba</h2>
+         137.33
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Lanthanum</b><br>"+"Protons:57<br>"+"Electrons:57<br>"+"Neutrons:82<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 5d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%14vw;border:2px
+         solid;background:hsla(96, 100%, 36%, 0.7)">
+         57
+         <h2>La</h2>
+         138.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Cerium</b><br>"+"Protons:58<br>"+"Electrons:58<br>"+"Neutrons:82<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f1 5d1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%19vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         58
+         <h2>Ce</h2>
+         140.12
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Praseodymium</b><br>"+"Protons:59<br>"+"Electrons:59<br>"+"Neutrons:82<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%24vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         59
+         <h2>Pr</h2>
+         140.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Neodymium</b><br>"+"Protons:60<br>"+"Electrons:60<br>"+"Neutrons:84<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f4");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%29vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         60
+         <h2>Nd</h2>
+         144.24
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Promethium</b><br>"+"Protons:61<br>"+"Electrons:61<br>"+"Neutrons:84<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%34vw;border:2px
+         solid;background:hsla(96, 100%, 36%, 0.7)">
+         61
+         <h2>Pm</h2>
+         144.91
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Samarium</b><br>"+"Protons:62<br>"+"Electrons:62<br>"+"Neutrons:88<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f6");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%39vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         62
+         <h2>Sm</h2>
+         150.36
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Europium</b><br>"+"Protons:63<br>"+"Electrons:63<br>"+"Neutrons:89<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f7");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%44vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         63
+         <h2>Eu</h2>
+         151.96
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Gadolinium</b><br>"+"Protons:64<br>"+"Electrons:64<br>"+"Neutrons:93<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f7 5d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%49vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         64
+         <h2>Gd</h2>
+         157.25
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Terbium</b><br>"+"Protons:65<br>"+"Electrons:65<br>"+"Neutrons:94<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f9");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%54vw;border:2px
+         solid;background:hsla(96, 100%, 36%, 0.7)">
+         65
+         <h2>Tb</h2>
+         158.93
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Dysprosium</b><br>"+"Protons:66<br>"+"Electrons:66<br>"+"Neutrons:97<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f10");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%59vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         66
+         <h2>Dy</h2>
+         162.50
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Holium</b><br>"+"Protons:67<br>"+"Electrons:67<br>"+"Neutrons:98<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f11");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%64vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         67
+         <h2>Ho</h2>
+         164.93
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Erbium</b><br>"+"Protons:68<br>"+"Electrons:68<br>"+"Neutrons:99<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f12");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%69vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         68
+         <h2>Er</h2>
+         167.26
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Thulium</b><br>"+"Protons:69<br>"+"Electrons:69<br>"+"Neutrons:100<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f13");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%74vw;border:2px
+         solid;background:hsla(96, 100%, 36%, 0.7)">
+         69
+         <h2>Tm</h2>
+         168.93
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Ytterbium</b><br>"+"Protons:70<br>"+"Electrons:70<br>"+"Neutrons:103<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%79vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         70
+         <h2>Yb</h2>
+         173.05
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Lutetium</b><br>"+"Protons:71<br>"+"Electrons:71<br>"+"Neutrons:104<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:36.2%84vw;border:2px solid;background:hsla(96, 100%, 36%, 0.7)">
+         71
+         <h2>Lu</h2>
+         174.97
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Hafnium</b><br>"+"Protons:72<br>"+"Electrons:72<br>"+"Neutrons:106<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%19vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         72
+         <h2>
+            Hf
+         </h2>
+         178.49
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Tantalum</b><br>"+"Protons:73<br>"+"Electrons:73<br>"+"Neutrons:108<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%24vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         73
+         <h2>Ta</h2>
+         180.95
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Tungsten</b><br>"+"Protons:74<br>"+"Electrons:74<br>"+"Neutrons:110<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d4");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%29vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         74
+         <h2>W</h2>
+         183.84
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Rhenium</b><br>"+"Protons:75<br>"+"Electrons:75<br>"+"Neutrons:111<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d5");'><center style=
+         "font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%34vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         75
+         <h2>Re</h2>
+         186.21
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Osmium</b><br>"+"Protons:76<br>"+"Electrons:76<br>"+"Neutrons:114<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d6");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%39vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         76
+         <h2>Os</h2>
+         190.23
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Iridium</b><br>"+"Protons:77<br>"+"Electrons:77<br>"+"Neutrons:115<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d7");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%44vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         77
+         <h2>Ir</h2>
+         192.22
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Platinum</b><br>"+"Protons:78<br>"+"Electrons:78<br>"+"Neutrons:117<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s1 4f14 5d9");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%49vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         78
+         <h2>Pt</h2>
+         195.08
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Gold</b><br>"+"Protons:79<br>"+"Electrons:79<br>"+"Neutrons:118<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s1 4f14 5d10");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%54vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         79
+         <h2>Au</h2>
+         196.97
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Mercury</b><br>"+"Protons:80<br>"+"Electrons:80<br>"+"Neutrons:121<br>"+"Natural State of Matter:Liquid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10");'><center style
+         ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%59vw;border:2px solid;background:hsla(360, 100%, 100%, 0.7)">
+         80
+         <h2>Hg</h2>
+         200.59
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Thallium</b><br>"+"Protons:81<br>"+"Electrons:81<br>"+"Neutrons:123<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%64vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         81
+         <h2>
+            Tl
+         </h2>
+         204.38
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Lead</b><br>"+"Protons:82<br>"+"Electrons:82<br>"+"Neutrons:125<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%69vw;border:2px
+         solid;background:hsla(88, 100%, 50%, 0.7)">
+         82
+         <h2>Pb</h2>
+         207.20
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Bismuth</b><br>"+"Protons:83<br>"+"Electrons:83<br>"+"Neutrons:126<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p3");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%74vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         83
+         <h2>Bi</h2>
+         208.98
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Polonium</b><br>"+"Protons:84<br>"+"Electrons:84<br>"+"Neutrons:125<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p4");'><center style
+         ="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%79vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         84
+         <h2>Po</h2>
+         208.98
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Astantine</b><br>"+"Protons:85<br>"+"Electrons:85<br>"+"Neutrons:125<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%84vw;border:2px solid;background:hsla(59, 100%, 68%, 0.70)">
+         85
+         <h2>
+            At
+         </h2>
+         209.99
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Radon</b><br>"+"Protons:86<br>"+"Electrons:86<br>"+"Neutrons:136<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Xe]6s2 4f14 5d10 6p6");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:23%89vw;border:2px
+         solid;background:hsla(247, 100%, 68%, 0.70)">
+         86
+         <h2>Rn</h2>
+         222.02
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Francium</b><br>"+"Protons:87<br>"+"Electrons:87<br>"+"Neutrons:136<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%4vw;border:2px solid;background:hsla(348, 100%, 60%, 0.7)">
+         87
+         <h2>Fr</h2>
+         223.02
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Radon</b><br>"+"Protons:88<br>"+"Electrons:88<br>"+"Neutrons:138<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%9vw;border:2px
+         solid;background:hsla(26, 100%, 50%, 0.7)">
+         88
+         <h2>Ra</h2>
+         226.03
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Actinium</b><br>"+"Protons:89<br>"+"Electrons:89<br>"+"Neutrons:138<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 6d1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%14vw;border:2px solid;background:hsl(175,50%,65%">
+         89
+         <h2>Ac</h2>
+         227.03
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Thallium</b><br>"+"Protons:90<br>"+"Electrons:90<br>"+"Neutrons:142<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 6d2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%19vw;border:2px solid;background:hsl(175,50%,65%">
+         90
+         <h2>Th</h2>
+         232.04
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Protactinium</b><br>"+"Protons:91<br>"+"Electrons:91<br>"+"Neutrons:148<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f2 6d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%24vw;border:2px
+         solid;background:hsl(175,50%,65%">
+         91
+         <h2>Pa</h2>
+         231.04
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Uranium</b><br>"+"Protons:92<br>"+"Electrons:92<br>"+"Neutrons:146<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f3 6d1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%29vw;border:2px solid;background:hsl(175,50%,65%">
+         92
+         <h2>U</h2>
+         238.03
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Neptunium</b><br>"+"Protons:93<br>"+"Electrons:93<br>"+"Neutrons:144<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f4 6d1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%34vw;border:2px solid;background:hsl(175,50%,65%">
+         93
+         <h2>Np</h2>
+         237.05
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Plutonium</b><br>"+"Protons:94<br>"+"Electrons:94<br>"+"Neutrons:150<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f6");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%39vw;border:2px solid;background:hsl(175,50%,65%">
+         94
+         <h2>Pu</h2>
+         244.06
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Americium</b><br>"+"Protons:95<br>"+"Electrons:95<br>"+"Neutrons:148<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f7");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%44vw;border:2px
+         solid;background:hsl(175,50%,65%">
+         95
+         <h2>Am</h2>
+         243.06
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Curium</b><br>"+"Protons:96<br>"+"Electrons:96<br>"+"Neutrons:151<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f7 6d1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%49vw;border:2px solid;background:hsl(175,50%,65%">
+         96
+         <h2>Cm</h2>
+         247.07
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Berkelium</b><br>"+"Protons:97<br>"+"Electrons:97<br>"+"Neutrons:150<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f9");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%54vw;border:2px solid;background:hsl(175,50%,65%">
+         97
+         <h2>Bk</h2>
+         247.07
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Californium</b><br>"+"Protons:98<br>"+"Electrons:98<br>"+"Neutrons:153<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f10");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%59vw;border:2px solid;background:hsl(175,50%,65%">
+         98
+         <h2>Cf</h2>
+         251.08
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Einsteinium</b><br>"+"Protons:99<br>"+"Electrons:99<br>"+"Neutrons:153<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f11");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%64vw;border:2px
+         solid;background:hsl(175,50%,65%">
+         99
+         <h2>Es</h2>
+         252.08
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Fermium</b><br>"+"Protons:100<br>"+"Electrons:100<br>"+"Neutrons:157<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f12");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%69vw;border:2px solid;background:hsl(175,50%,65%">
+         100
+         <h2>Fm</h2>
+         257.10
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Mendelevium</b><br>"+"Protons:101<br>"+"Electrons:101<br>"+"Neutrons:157<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f13");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%74vw;border:2px solid;background:hsl(175,50%,65%">
+         101
+         <h2>Md</h2>
+         258.10
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Nobelium</b><br>"+"Protons:102<br>"+"Electrons:102<br>"+"Neutrons:157<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%79vw;border:2px
+         solid;background:hsl(175,50%,65%">
+         102
+         <h2>No</h2>
+         259.10
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Lawrencium</b><br>"+"Protons:103<br>"+"Electrons:103<br>"+"Neutrons:159<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d1");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:40.6%84vw;border:2px solid;background:hsl(175,50%,65%">
+         103
+         <h2>Lr</h2>
+         266.12
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Rutherfordium</b><br>"+"Protons:104<br>"+"Electrons:104<br>"+"Neutrons:35<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d2");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%19vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         104
+         <h2>Rf</h2>
+         267.12
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Dubnium</b><br>"+"Protons:105<br>"+"Electrons:105<br>"+"Neutrons:157<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%24vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         105
+         <h2>Db</h2>
+         268.13
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Seaborgium</b><br>"+"Protons:106<br>"+"Electrons:106<br>"+"Neutrons:266<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d4");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%29vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         106
+         <h2>Sg</h2>
+         271.13
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Bhorium</b><br>"+"Protons:107<br>"+"Electrons:107<br>"+"Neutrons:157<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%34vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         107
+         <h2>Bh</h2>
+         270.13
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Hassium</b><br>"+"Protons:108<br>"+"Electrons:108<br>"+"Neutrons:161<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d6");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%39vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         108
+         <h2>Hs</h2>
+         277.15
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Meitnerium</b><br>"+"Protons:109<br>"+"Electrons:109<br>"+"Neutrons:169<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d7");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%44vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         109
+         <h2>Mt</h2>
+         278.16
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Darmstadtium</b><br>"+"Protons:110<br>"+"Electrons:110<br>"+"Neutrons:171<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s1 5f14 6d9");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%49vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         110
+         <h2>Ds</h2>
+         281.17
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Roentgenium</b><br>"+"Protons:111<br>"+"Electrons:111<br>"+"Neutrons:169<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s1 5f14 6d10");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%54vw;border:2px
+         solid;background:hsla(213, 100%, 50%, 0.7)">
+         111
+         <h2>Rg</h2>
+         282.17
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Copernicum</b><br>"+"Protons:112<br>"+"Electrons:112<br>"+"Neutrons:173<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%59vw;border:2px solid;background:hsla(213, 100%, 50%, 0.7)">
+         112
+         <h2>Cn</h2>
+         285.18
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Nihonium</b><br>"+"Protons:113<br>"+"Electrons:113<br>"+"Neutrons:173<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p1");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%64vw;border:2px
+         solid;background:hsla(88, 100%, 50%, 0.7)">
+         113
+         <h2>Nh</h2>
+         286.19
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Flerovium</b><br>"+"Protons:114<br>"+"Electrons:114<br>"+"Neutrons:175<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p2");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%69vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         114
+         <h2>Fl</h2>
+         289.19
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Moscovium</b><br>"+"Protons:115<br>"+"Electrons:115<br>"+"Neutrons:174<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p3");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%74vw;border:2px
+         solid;background:hsla(88, 100%, 50%, 0.7)">
+         115
+         <h2>Mc</h2>
+         289.19
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Livermorium</b><br>"+"Protons:116<br>"+"Electrons:116<br>"+"Neutrons:177<br>"+"Natural State of Matter:Solid<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p4");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%79vw;border:2px solid;background:hsla(88, 100%, 50%, 0.7)">
+         116
+         <h2>Lv</h2>
+         293.20
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Tennessine</b><br>"+"Protons:117<br>"+"Electrons:117<br>"+"Neutrons:177<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p5");'><center style="font:1vw/5% arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%84vw;border:2px
+         solid;background:hsla(59, 100%, 68%, 0.70)">
+         117
+         <h2>Ts</h2>
+         294.21
+      </center></a>
+      <a href="#" style="color:black"onClick='displayModal("<b>Oganesson</b><br>"+"Protons:118<br>"+"Electrons:118<br>"+"Neutrons:176<br>"+"Natural State of Matter:Gas<br>"+"Electron Configuration:[Rn]7s2 5f14 6d10 7p6");'><center style="font:1vw/5%
+         arial;width:3.5%;padding:.6%.5%;position:absolute;margin:27.40%89vw;border:2px solid;background:hsla(247, 100%, 68%, 0.70)">
+         118
+         <h2>Og</h2>
+         294.21
+      </center></a>
+   </body>
+</html>
